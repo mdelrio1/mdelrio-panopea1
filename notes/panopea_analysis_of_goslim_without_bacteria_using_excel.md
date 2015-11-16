@@ -20,7 +20,9 @@ From fileGeoduck-transcriptome-v3.faextract sequence names using Jupyter, foll
 name the sheet database	in Geoduck-transcriptome-v2-GOSlim sheet add column and formula as follows:
 |cell|content|
 |----|-------||Y1|nobacteria||Y2|=IF(VLOOKUP(A2,datos,1)=A2,W2,"")|
-this formula looks for the presence of the GO slim data and if found writes the GOSlim term, if not, places a "blank"		Build the pivot table using the columns	asdatabase	`Geoduck-transcriptome-v2-GOSlim'!$A$1:$Y$102359`you can place the pivot table in the same sheet or in a new one
+this formula looks for the presence of the GO slim data and if found writes the GOSlim term, if not, places a "blank"	
+Formulas and data should look like this:<center><img src="../img/Screen Shot PanopeaGO4.png"/ width = 75%></center>
+Build the pivot table using the columns	asdatabase	`Geoduck-transcriptome-v2-GOSlim'!$A$1:$Y$102359`you can place the pivot table in the same sheet or in a new one
 Use	as follows in the pivot table:
 `GOSlim_bin`		`rows`
 `qseqid`		`values (count)`
